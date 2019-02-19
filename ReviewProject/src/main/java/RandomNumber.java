@@ -18,12 +18,6 @@ package main.java;
  *  @see java.lang.Math#random()
  */
 public class RandomNumber {
-        private static final long MULTIPLIER = 16807;
-        private static final long MODULUS =  2147483647;
-        // Quotient of MODULUS / MULTIPLIER
-        private static final long QUOT = 127773; 
-        // Remainder of MODULUS / MULTIPLIER
-        private static final long REM  = 2836;   
 
         /**
          * The current seed of the generator. 
@@ -74,5 +68,13 @@ public class RandomNumber {
                                 "invalid range: " + lo + " > " + hi);
                 return (int) (nextDoubleRand() * (hi - lo + 1)  + lo);
         }
+        
+        private static final long MULTIPLIER = 16807;
+        private static final long MODULUS =  2147483647;
+        // Quotient of MODULUS / MULTIPLIER
+        private static final long QUOT = 127773; 
+        // Remainder of MODULUS / MULTIPLIER
+        private static final long REM  = 2836;   
+
 }
 
