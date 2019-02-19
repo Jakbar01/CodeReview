@@ -26,6 +26,7 @@ public class PowerSetData {
 	public void initializeArray(String string) throws NumberFormatException,
 	NoSuchElementException, NegativeArraySizeException{
 
+
 		StringTokenizer inputTokens = new StringTokenizer(string);
 		String[] RESULT = string.split("\n");
 
